@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,7 +46,6 @@
         box-sizing: border-box;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
-
     body {
         width: 100%;
         height: 100vh;
@@ -56,7 +54,6 @@
         display: grid;
         place-items: center;
     }
-
     header {
         position: absolute;
         top: 0;
@@ -72,29 +69,24 @@
         border-top-right-radius: 20px;
         z-index: 100;
     }
-
     .container {
         width: 80%;
         max-width: 850px;
         text-align: center;
     }
-
     .container h1 {
         font-size: 36px;
         margin-bottom: 40px;
         text-decoration: underline;
         text-underline-offset: 8px;
     }
-
     .container .question {
         font-size: 26px;
         margin-top: 80px;
     }
-
     .container .choices {
         margin-top: 20px;
     }
-
     .choice {
         font-size: 20px;
         background-color: #eee;
@@ -109,16 +101,13 @@
         transform: translateY(50%);
         animation: fade-in 0.5s ease forwards;
     }
-
     .choice:hover {
         background-color: #ddd;
     }
-
     .choice.selected {
         background-color: #3d2a38;
         color: #fff;
     }
-
     .btn {
         width: 60%;
         font-size: 20px;
@@ -132,18 +121,15 @@
         border-top-left-radius: 20px;
         border-bottom-right-radius: 20px;
     }
-
     .btn:hover {
         background: #2a9064;
 
         box-shadow: 0 0 25px #0ef;
     }
-
     .scoreCard {
         font-size: 24px;
         margin-top: 20px;
     }
-
     .alert {
         background-color: #0fab19;
         border-radius: 5px;
@@ -153,13 +139,11 @@
         top: 0;
         display: none;
     }
-
     .startBtn {
         width: 15%;
         padding-block: 20px;
         text-align: center;
     }
-
     .timer {
         position: absolute;
         top: 20px;
@@ -177,8 +161,6 @@
         align-items: center;
         animation: pulse 1s ease-in-out infinite;
     }
-
-    /* Adding Animation to Timer */
     @keyframes pulse {
         0% {
             transform: scale(1);
@@ -192,8 +174,6 @@
             transform: scale(1);
         }
     }
-
-    /* Adding Animation to choices */
     @keyframes fade-in {
         0% {
             opacity: 0;
@@ -205,7 +185,6 @@
             transform: translateY(0);
         }
     }
-
     footer {
         position: fixed;
         bottom: 0;
@@ -221,7 +200,6 @@
         border-top-right-radius: 20px;
         z-index: 100;
     }
-
     footer p,
     header p {
         font-size: 15px;
@@ -229,37 +207,30 @@
         padding-top: 10px;
         text-align: center;
     }
-
     @media screen and (max-width:900px) {
         .container {
             width: 100%;
             margin-top: 50px;
         }
-
         .container h1 {
             font-size: 24px;
         }
-
         .container .question {
             font-size: 22px;
             margin-top: 50px;
         }
-
         .choice {
             width: 90%;
         }
-
         .question {
             font-size: .1rem;
             margin:80px;
         }
-
         .timer {
             width: 50px;
             height: 50px;
             font-size: 20px;
         }
-
         .startBtn {
             width: 50%;
         }
@@ -474,5 +445,4 @@
         }
     });
 </script>
-
 </html>
